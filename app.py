@@ -47,7 +47,7 @@ UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(UPLOAD_FOLDER,'static')        
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif' , 'xlsx'}
 
-app.config["MONGO_URI"] = "mongodb+srv://mustapha31:L01FRcNEVjpBtfGd@cluster0.oz4o7.mongodb.net/mustapha?retryWrites=true&w=majority"
+app.config["MONGO_URI"] = "mongodb+srv://user:name@cluster0.oz4o7.mongodb.net/mustapha?retryWrites=true&w=majority"
 mongodb_client = PyMongo(app)
 db = mongodb_client.db
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -186,8 +186,8 @@ def upload_file():
 #login using goole 
 # Configuration
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
-GOOGLE_CLIENT_ID = "762891257918-qptapepkj7lamngp9uru5rrb5m4167l0.apps.googleusercontent.com"
-GOOGLE_CLIENT_SECRET = "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"
+GOOGLE_CLIENT_ID = "GOOGLE_CLIENT_ID"
+GOOGLE_CLIENT_SECRET = "GOOGLE_CLIENT_SECRET"
 GOOGLE_DISCOVERY_URL = (
     "https://accounts.google.com/.well-known/openid-configuration"
 )
